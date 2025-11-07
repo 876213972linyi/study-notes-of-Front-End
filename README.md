@@ -1,2 +1,2 @@
-# study1
+# studynodes of Front End
 my study nodes about html css js
