@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 属性选择器相当于起名字 */
+    [title]
+    {
+      background-color: aqua;
+    }
+    [title=div]
+    {background-color: beige;}
+
+.home span{
+  /* 后代选择器    */
+  color: chocolate;
+}
+/* 直接子代选择器  直接子代：home的儿子 只能是home的子代*/
+.home>p{
+  color: rgb(118, 56, 241);
+}
+/* 兄弟选择器
+1.相邻选择器
+
+2.普通兄弟选择器 */
+.brother1~{
+  color: #000;
+}
+
+
+  </style>
+</head>
+<body>
+  <!-- 属性选择器 -->
+  
+  <div class="home">
+    <p>   你好
+      <span class="brother">这是嵌套的span元素</span>
+      <span class="brother2">这是span的兄弟</span>
+    </p>
+  </div>
+</body>
+</html>
