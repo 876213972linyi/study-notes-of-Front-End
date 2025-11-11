@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 伪元素的应用 */
+    .div_style
+    {
+      background-color: antiquewhite;
+      width: auto;
+    }
+    /* 选中第一行 ：：first—line*/
+    .div_style ::first-line{
+      font-size: large;
+      color: crimson;
+    }
+    /* 选中第一个字用伪元素 ：：first-letter */
+    .div_style::first-letter
+    {
+      font-size:larger;
+    }
+    /* 我想在div这个整体前面插入一段话 接下来看操作 */
+    /* 这里的item直接选中多个元素，类似于交集 */
+    .item::before
+    {
+      content:"这是一段书评：";
+    }
+     /* 我想在div这个整体前面插入一段话 接下来看操作 */
+     /* 这里的item直接选中多个元素，类似于交集 */
+    .item::after{
+      content: "";
+      /* inline-block :行内盒子 */
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: brown;
+    }
+
+  </style>
+
+</head>
+<body>
+  <!-- 伪元素  伪元素是通过特定的方式选择特定的元素 伪元素用两个冒号表示
+  1.：：first-line  首行
+2.::first-letter:首字母
+3.：：before:往某个地方的前面插入元素 -->
+  <div class="div_style item">      《小王子》
+  </div>
+  <div class="div_style2 item">摘玫瑰</div>
+  
+
+</body>
+</html>

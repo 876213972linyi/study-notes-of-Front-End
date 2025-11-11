@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 如何给div,h1,p,span设置相同的一些属性，比如字体颜色  现在主要演示如何使用css的继承属性*/
+    /* h1,p,span{
+color: blue;
+    } */
+div.box{
+  /* color 是可继承元素 */
+  color: brown;
+}
+
+  </style>
+
+</head>
+<body>
+  <!-- css的属性 
+  1.继承性
+      css 的某些属性具有继承性：在该元素上设置好了之后，它的后代元素都会继承这个属性
+       不过后代元素有自己设置属性的话，会优先自己设置的属性
+  2.层叠属性
+      层叠很多层属性，最终的效果会1.按照权重  你想突出这个属性，可以在后面直接加上！important (10000权重)2.直接覆盖，最后一个生效
+  3.类型属性-->
+     
+  <!-- 默认继承 -->
+  <div class="box">
+    <h1>我是h1元素</h1>
+    <p>我是p元素</p>
+    <span>我是span元素</span>
+    <!-- div ->h1+p+span   div是父元素-->
+
+  </div>
+</body>
+</html>
