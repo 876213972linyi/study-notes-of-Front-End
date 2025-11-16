@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .box{
+      width: 1920px;
+      height: 834px;
+      background-color: rgb(48, 178, 135);
+      /* 去掉滚动条 */
+      overflow: hidden;
+      /* div缩放 图片也位于中间 */
+      
+      
+    }
+
+    .tex{
+      /* 相对定位  元素依然按照标准流来定位*/
+      position: relative;
+      /* left等 直接变成脱标元素它本身会移动 不会影响其他元素  
+      单揪出来
+      相对于原来位置的左上角进行调整*/
+      left:30px;  
+      /* 往左多出30px 实际上元素就会往右走 */
+      top: 30px;
+
+    }
+  </style>
+</head>
+<body>
+  <!-- css布局 上强度 
+  标准流布局 相对定位 绝对定位 固定定位 粘性定位 z-index-->
+  <!-- 标准流的布局：尊重元素本身的特性 比如div就是要独占一行 但可以用margin padding 进行调整 
+  如果需要某一个元素脱离标准流设置更加个性化的效果 需要用position进行脱标 -->
+  <!-- 元素的定位：可以从正常的布局中取出这个元素，让它们具有不同的行为 用position：static:默认值静态 relative:相对定位  absolute：绝对定位  Fixed ；固定定位  sticky：粘性定位    -->
+
+  <div class="box">
+     <img src="./bg_01_5d7c340b.jpg"> 
+  </div>
+</body>
+</html>

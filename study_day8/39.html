@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 抽取到一个class里面 */
+    .top_bar {
+      background-image: url('./ico_service.png');
+      background-repeat: no-repeat;
+      /* i元素设置不了宽高 需要inline-block */
+      display: inline-block;
+    }
+
+    .sprite1 {
+
+      /* 在一个网站上找位置参数：http://www.spritecow.com/ */
+      background-position: 0 0;
+      width: 36px;
+      height: 42px;
+    }
+
+    .sprite2 {
+      background-position: 0 -43px;
+      width: 36px;
+      height: 42px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 精灵图 -->
+  <i class=" top_bar sprite1"></i>
+  <i class="top_bar sprite2"></i>
+</body>
+
+</html>
