@@ -1,0 +1,36 @@
+.item{
+  width: 300px;
+  margin: 0 auto;
+}
+.item .album img{
+  width: 100%;
+  border-radius: 6px;
+}
+.item .info p{
+  font-size: 13px;
+  margin-top: 8px;
+  /* 不换行 */
+  white-space: nowrap;  
+  /* 超出的部分进行隐藏 */
+  overflow: hidden;
+  /* 文字部分用省略号 */
+  text-overflow: ellipsis;
+}
+.item .info .anchor 
+{
+  color: #888;
+  font-size:12px;
+  margin-top: 5px;
+ 
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+.item .info .anchor::before
+/* 在标题前面创建一个东西 这是需要创建up小投标 */
+{
+  content:url()
+}
+
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      text-align: center;
+      background-color: aliceblue;
+    }
+
+    .p_style {
+      font-weight: 500;
+      color: #000;
+   
+    }
+
+    .item {
+      /* a为行内几元素 不好调整，需要修改 */
+      display: inline-block;
+      width: 234px;
+      height: 300px;
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 20px;
+      box-sizing: content-box;
+      text-decoration: none;
+      color: #999;
+
+    }
+
+  .item img {
+      width: 200px;
+      height: 200px;
+
+    }
+    .item .title{
+      margin-top: 14px;
+    }
+    .intr{
+      /* 强制不换行 */
+      color: #999;
+      margin-top: 8px;
+     white-space: nowrap;
+     /* 超出部分隐藏 */
+     overflow: hidden;
+     /* 文本超出了就用省略号代替 */
+     text-overflow: ellipsis;
+
+    }
+    span{
+      font:400;
+      color: #ff6700;
+      text-align: center;
+    }
+    .item:hover{
+      /* 阴影 想x,y,模糊程度，扩散范围 */
+      box-shadow: 0 2px 35px 10px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+  <a class="item" href="https://www.mi.com/">
+    <div class="album">
+      <img src="./xiaomo.png" alt="">
+      <p class="title">小米手机5 Pro</p>
+      <p class="intr">
+        全新12代英特尔处理器，CIN一体精雕工艺，2.5工艺，着凉你的美
+      </p>
+      <span>2599元起</span>
+    </div>
+
+  
+  </a>
+</body>
+
+</html>
